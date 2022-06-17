@@ -24,7 +24,7 @@ export default {
 }
 
 body {
-  background: var(--color-bg-0);
+  background: var(--clr-bg-0);
 }
 
 a {
