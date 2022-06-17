@@ -6,6 +6,10 @@ vbase-sass
       <img src="@/assets/jumboart.png" alt="" class="jumboart" />
     </div>
     <img class="top-divider" src="@/assets/divider.png" />
+    <div class="jumbotron">
+      <img src="@/assets/jumboart.png" alt="" class="jumboart" />
+    </div>
+    <img class="top-divider" src="@/assets/divider.png" />
   </div>
 </template>
 
