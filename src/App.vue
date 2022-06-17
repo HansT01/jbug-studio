@@ -27,4 +27,20 @@ nav {
     }
   }
 }
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-bg-0);
+}
+
+a {
+  color: unset;
+  text-decoration: none;
+}
 </style>
