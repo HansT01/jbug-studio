@@ -1,29 +1,28 @@
-vbase-sass
-
 <template>
   <div class="container">
     <div class="jumbotron">
       <img src="@/assets/jumboart.png" alt="" class="jumboart" />
     </div>
 
-    <img class="top-divider" src="@/assets/divider.png" />
+    <TopDivider />
 
     <div class="container-inner">
       <img src="@/assets/shoppresets.png" alt="" class="title" />
       <Carousel />
     </div>
 
-    <img class="bottom-divider" src="@/assets/divider2.png" />
+    <BottomDivider />
   </div>
 </template>
 
 <script lang="ts">
-import Carousel from '@/components/Carousel.vue'
+import { defineComponent } from 'vue'
 
-export default {
-  components: { Carousel },
-  setup() {},
-}
+export default defineComponent({
+  setup() {
+    return {}
+  },
+})
 </script>
 
 <style lang="scss" scoped>
@@ -68,24 +67,5 @@ export default {
   object-fit: contain;
   margin: 2rem 0rem;
   max-width: 80vw;
-}
-
-.top-divider {
-  width: 100%;
-
-  /* Disable highlighting */
-  user-select: none;
-
-  margin-bottom: -5%;
-}
-
-.bottom-divider {
-  width: 100%;
-
-  /* Disable highlighting */
-  user-select: none;
-
-  background-color: var(--clr-bg-1);
-  margin-bottom: -1rem;
 }
 </style>

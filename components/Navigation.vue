@@ -2,12 +2,12 @@
   <header>
     <div class="container">
       <div class="start">
-        <router-link to="/">
+        <NuxtLink to="/">
           <img src="@/assets/jbuglogo.png" alt="" class="logo link" />
-        </router-link>
-        <router-link to="/" class="link">HOME</router-link>
-        <router-link to="/about" class="link">ABOUT US</router-link>
-        <router-link to="/shop" class="link">SHOP</router-link>
+        </NuxtLink>
+        <NuxtLink to="/" class="link">HOME</NuxtLink>
+        <NuxtLink to="/about" class="link">ABOUT US</NuxtLink>
+        <NuxtLink to="/shop" class="link">SHOP</NuxtLink>
       </div>
       <div class="center"></div>
       <div class="end">
@@ -37,13 +37,7 @@
   </header>
 </template>
 
-<script lang="ts">
-export default {
-  setup() {
-    return {}
-  },
-}
-</script>
+<script lang="ts"></script>
 
 <style lang="scss" scoped>
 * {

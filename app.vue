@@ -1,19 +1,10 @@
 <template>
   <Navigation />
-  <router-view />
+  <NuxtPage />
 </template>
 
-<script lang="ts">
-import Navigation from './components/Navigation.vue'
-export default {
-  components: {
-    Navigation,
-  },
-}
-</script>
-
 <style lang="scss">
-@import '@/assets/styles/variables.css';
+@import '@/assets/css/main.css';
 
 * {
   box-sizing: border-box;
