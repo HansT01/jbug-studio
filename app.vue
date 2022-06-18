@@ -1,6 +1,6 @@
 <template>
   <Navigation />
-  <NuxtPage class="custom-pt flex content-center" />
+  <NuxtPage class="custom-pt flex flex-col content-center clr-bg-1" />
 
   <BottomDivider />
   <Footer />

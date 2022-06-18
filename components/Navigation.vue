@@ -5,9 +5,9 @@
         <NuxtLink to="/">
           <img src="@/assets/jbuglogo.png" alt="" class="h-8 max-h-full max-w-full object-contain" />
         </NuxtLink>
-        <NuxtLink to="/" class="mx-2">HOME</NuxtLink>
-        <NuxtLink to="/about" class="mx-2">ABOUT US</NuxtLink>
-        <NuxtLink to="/shop" class="mx-2">SHOP</NuxtLink>
+        <NuxtLink to="/" class="mx-2 font-bold">HOME</NuxtLink>
+        <NuxtLink to="/about" class="mx-2 font-bold">ABOUT US</NuxtLink>
+        <NuxtLink to="/shop" class="mx-2 font-bold">SHOP</NuxtLink>
       </div>
       <div>
         <div class="mx-2" href="https://www.instagram.com/jbug.illustration.studio/">

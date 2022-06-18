@@ -17,3 +17,7 @@
 .clr-bg-1 {
   background-color: var(--clr-bg-1);
 }
+
+.clr-bg-0 {
+  background-color: var(--clr-bg-0);
+}
