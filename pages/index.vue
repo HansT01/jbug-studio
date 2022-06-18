@@ -8,7 +8,7 @@
 
     <div class="flex flex-col items-center">
       <img src="@/assets/shoppresets.png" alt="" class="h-20 object-contain px-8 max-w-full" />
-      <Carousel />
+      <Carousel :msg="'hey'" />
       <Carousel />
       <Carousel />
       <Carousel />
