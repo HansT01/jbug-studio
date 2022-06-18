@@ -13,3 +13,7 @@
   --clr-text-0: #ffffff;
   --clr-text-1: #485764;
 }
+
+.clr-bg-1 {
+  background-color: var(--clr-bg-1);
+}

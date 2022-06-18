@@ -10,5 +10,6 @@
   user-select: none;
 
   margin-bottom: -5%;
+  margin-top: -2%;
 }
 </style>

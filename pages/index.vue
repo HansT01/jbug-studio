@@ -1,31 +1,27 @@
 <template>
-  <div class="container">
-    <div class="jumbotron">
-      <img src="@/assets/jumboart.png" alt="" class="jumboart" />
-    </div>
+  <div class="items-center">
+    <img src="@/assets/jumboart.png" alt="" class="jumboart" />
 
     <TopDivider />
 
-    <div class="container-inner">
-      <img src="@/assets/shoppresets.png" alt="" class="title" />
+    <div class="w-full items-center clr-bg-1">
+      <img src="@/assets/shoppresets.png" alt="" class="h-20 object-contain px-8 max-w-full" />
       <Carousel />
     </div>
-
-    <BottomDivider />
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  setup() {
-    return {}
-  },
-})
-</script>
-
 <style lang="scss" scoped>
+* {
+  display: flex;
+  flex-direction: column;
+}
+
+img {
+  user-select: none;
+  pointer-events: none;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -50,22 +46,15 @@ export default defineComponent({
 
 .jumboart {
   width: min(90%, 800px);
-  height: 100%;
-  object-position: left;
-  object-fit: cover;
-  pointer-events: none;
+  /* height: 100%; */
+  /* object-position: left; */
+  /* object-fit: cover; */
+  /* pointer-events: none; */
 
   /* Gets rid of spacing between divider */
-  margin-bottom: -2%;
+  /* margin-bottom: -2%; */
 
   /* Disable highlighting */
-  user-select: none;
-}
-
-.title {
-  height: 5rem;
-  object-fit: contain;
-  margin: 2rem 0rem;
-  max-width: 80vw;
+  /* user-select: none; */
 }
 </style>
