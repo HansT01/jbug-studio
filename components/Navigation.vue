@@ -1,5 +1,5 @@
 <template>
-  <header class="w-full place-content-center fixed">
+  <header class="w-full place-content-center fixed shadow">
     <div class="w-full nav justify-between">
       <div>
         <NuxtLink to="/">

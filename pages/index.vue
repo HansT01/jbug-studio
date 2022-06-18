@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col items-center">
-    <div class="flex flex-col items-center clr-bg-0">
+    <div class="flex flex-col items-center clr-bg-0 pt-4">
       <img src="@/assets/jumboart.png" alt="" class="jumboart" />
 
       <TopDivider />
