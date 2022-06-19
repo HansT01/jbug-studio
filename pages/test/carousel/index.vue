@@ -1,5 +1,7 @@
 <template>
-  <div></div>
+  <div>
+    <Carousel :products="testProduct" />
+  </div>
 </template>
 
 <script setup lang="ts"></script>
