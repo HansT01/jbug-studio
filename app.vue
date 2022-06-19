@@ -25,8 +25,4 @@ a {
   color: unset;
   text-decoration: none;
 }
-
-.custom-pt {
-  padding-top: max(min(4vw, 10vh), 60px);
-}
 </style>
