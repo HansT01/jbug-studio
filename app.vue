@@ -1,8 +1,11 @@
 <template>
-  <div class="">
-    <Navigation />
-    <NuxtPage class="custom-pt flex flex-col content-center clr-bg-0" />
-    <Footer />
+  <div class="flex flex-grow">
+    <Drawer />
+    <div class="flex-grow flex flex-col flex-shrink">
+      <Navigation />
+      <NuxtPage class="custom-pt flex flex-col content-center clr-bg-0" />
+      <Footer />
+    </div>
   </div>
 </template>
 
