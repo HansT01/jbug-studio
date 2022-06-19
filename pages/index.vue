@@ -1,18 +1,16 @@
 <template>
   <div class="flex flex-col items-center">
-    <div class="flex flex-col items-center clr-bg-0 pt-4">
-      <img src="@/assets/jumboart.png" alt="" class="jumboart" />
-
-      <TopDivider />
+    <div class="flex flex-col items-center pt-4">
+      <img src="@/assets/jumboart.jpg" alt="" class="jumboart" />
     </div>
+    <TopDivider />
 
-    <div class="flex flex-col items-center">
+    <div class="flex flex-col items-center clr-bg-1 w-full">
       <img src="@/assets/shoppresets.png" alt="" class="h-20 object-contain px-8 max-w-full" />
-      <Carousel :msg="'hey'" />
-      <Carousel />
-      <Carousel />
       <Carousel />
     </div>
+
+    <BottomDivider />
   </div>
 </template>
 
