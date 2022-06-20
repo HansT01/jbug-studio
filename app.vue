@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-grow">
-    <Drawer />
-    <div class="flex-grow flex flex-col flex-shrink">
+  <div class="flex">
+    <Drawer class="" />
+    <div class="flex flex-col">
       <Navigation />
       <NuxtPage class="custom-pt flex flex-col content-center clr-bg-0" />
       <Footer />

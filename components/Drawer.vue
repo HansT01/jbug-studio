@@ -1,25 +1,39 @@
 <template>
-  <div :class="{ hidden: !drawerOpen().value }" class="flex-col clr-bg-1">
-    <!-- WHAT IS THIS EVEN FOR??? -->
-    <div class="shade lg:hidden z-40 h-screen md:h-full"></div>
-
-    <div class="drawer flex-grow lg:static lg:h-auto fixed left-0 top-0 z-50 h-screen md:h-full">
-      <div class="lg:top-0 lg:sticky flex flex-col overflow-y-auto overscroll-contain h-screen">
-        <div class="mt-64">HEYHEYHEYHEYHEY</div>
-        <div class="mt-64">{{ drawerOpen() }}</div>
-        <div class="mt-64">HEY</div>
-        <div class="mt-64">HEY</div>
-        <div class="mt-64">HEY</div>
-        <div class="mt-64">HEY</div>
-        <div class="mt-64">HEY</div>
-        <div class="mt-64">HEY</div>
-      </div>
+  <div class="sidebar sticky-sidebar static-sidebar h-screen overflow-y-scroll z-50 bg-red-500">
+    <!-- Container > Content -->
+    <div class="flex flex-col z-50 h-auto static">
+      <Square class="bg-blue-400" />
+      <Square class="bg-purple-400" />
+      <Square class="bg-pink-400" />
+      <Square class="bg-red-400" />
+      <Square class="bg-blue-400" />
+      <Square class="bg-purple-400" />
+      <Square class="bg-pink-400" />
+      <Square class="bg-red-400" />
+      <Square class="bg-blue-400" />
+      <Square class="bg-purple-400" />
+      <Square class="bg-pink-400" />
+      <Square class="bg-red-400" />
+      <Square class="bg-blue-400" />
+      <Square class="bg-purple-400" />
+      <Square class="bg-pink-400" />
+      <Square class="bg-red-400" />
     </div>
   </div>
 </template>
 
-<script setup lang="ts">
-const drawer = drawerOpen()
-</script>
+<script setup lang="ts"></script>
 
-<style scoped></style>
+<style scoped>
+.sidebar {
+  min-width: 256px;
+}
+
+.sticky-sidebar {
+  @apply lg:!sticky lg:!left-0 lg:!top-0;
+}
+
+.static-sidebar {
+  @apply fixed;
+}
+</style>
