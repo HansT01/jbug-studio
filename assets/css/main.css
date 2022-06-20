@@ -5,6 +5,7 @@
 
   --clr-bg-0: #ffffff;
   --clr-bg-1: #7c8fa0;
+  --clr-bg-2: #9fb0be;
 
   --clr-btn-0: #ffffff;
   --clr-btn-1: #485764;
@@ -20,6 +21,10 @@
 
 .clr-bg-1 {
   background-color: var(--clr-bg-1);
+}
+
+.clr-bg-2 {
+  background-color: var(--clr-bg-2);
 }
 
 .clr-text-0 {

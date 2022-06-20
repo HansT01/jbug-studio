@@ -1,8 +1,13 @@
 <template>
-  <header class="flex w-full place-content-center sticky top-0 z-10 shadow justify-between clr-bg-0">
-    <div class="flex items-center w-full px-6 py-4 gap-6">
+  <header
+    class="flex w-full justify-center sticky top-0 z-10 clr-bg-0"
+    :class="{
+      conditionalBorder: true,
+    }"
+  >
+    <div class="flex items-center w-full px-6 py-4 gap-6 max-w-7xl">
       <button
-        @click="openDrawer"
+        @click="drawerOpen().value = true"
         :class="{
           hidden: drawerOpen().value,
         }"
@@ -49,13 +54,9 @@
   </header>
 </template>
 
-<script lang="ts" setup>
-const openDrawer = () => {
-  drawerOpen().value = true
-}
-</script>
+<script lang="ts" setup></script>
 
-<style lang="scss" scoped>
+<style scoped>
 svg {
   fill: var(--clr-text-1);
 }

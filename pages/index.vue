@@ -5,9 +5,11 @@
     </div>
     <TopDivider />
 
-    <div class="flex flex-col items-center clr-bg-1 w-full">
-      <img src="@/assets/shoppresets.png" alt="" class="h-20 object-contain px-8 max-w-full" />
-      <Carousel />
+    <div class="flex flex-col clr-bg-1 w-full">
+      <div class="flex flex-col self-center items-center max-w-7xl w-full">
+        <img src="@/assets/shoppresets.png" alt="" class="h-20 object-contain px-8 max-w-full" />
+        <Carousel />
+      </div>
     </div>
 
     <BottomDivider />

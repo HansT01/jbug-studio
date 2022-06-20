@@ -1,6 +1,7 @@
 <template>
   <div class="flex">
-    <Drawer class="" />
+    <Drawer />
+    <div class="shade l-0 t-0 fixed w-full h-full z-40 lg:hidden" @click="drawerOpen().value = false" :class="{ hidden: !drawerOpen().value }" />
     <div class="flex flex-col">
       <Navigation />
       <NuxtPage class="custom-pt flex flex-col content-center clr-bg-0" />
@@ -29,5 +30,10 @@ body {
 a {
   color: unset;
   text-decoration: none;
+}
+
+.shade {
+  background-color: #222;
+  opacity: 0.46;
 }
 </style>
