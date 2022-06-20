@@ -1,12 +1,9 @@
 <template>
   <header class="w-full place-content-center sticky top-0 z-10 shadow justify-between clr-bg-0">
     <div class="w-full nav px-6 py-4">
-      <NuxtLink to="/">
+      <NuxtLink to="/" class="h-14">
         <img src="@/assets/jbuglogo.png" alt="" class="h-8 max-h-full max-w-full object-contain" />
       </NuxtLink>
-      <NuxtLink to="/" class="mx-2 font-bold clr-text-1">HOME</NuxtLink>
-      <NuxtLink to="/about" class="mx-2 font-bold clr-text-1">ABOUT US</NuxtLink>
-      <NuxtLink to="/shop" class="mx-2 font-bold clr-text-1">SHOP</NuxtLink>
       <div class="flex-grow"></div>
       <div class="mx-2 clr-text-1" href="https://www.instagram.com/jbug.illustration.studio/">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
@@ -43,5 +40,9 @@
 
 svg {
   fill: var(--clr-text-1);
+}
+
+header {
+  height: 56px;
 }
 </style>
