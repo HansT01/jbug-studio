@@ -51,9 +51,7 @@
 
 <script lang="ts" setup>
 const openDrawer = () => {
-  console.log('opening drawer!')
   drawerOpen().value = true
-  console.log(drawerOpen().value)
 }
 </script>
 

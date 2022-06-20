@@ -1,10 +1,5 @@
 <template>
-  <div
-    class="sidebar sticky-sidebar fixed-sidebar h-screen overflow-y-auto z-50 clr-bg-0 shadow"
-    :class="{
-      hidden: !drawerOpen().value,
-    }"
-  >
+  <div class="sidebar sticky-sidebar fixed-sidebar h-screen overflow-y-auto z-50 clr-bg-0 shadow" :class="{ '-ml-64': !drawerOpen().value }">
     <!-- Container > Content -->
     <div class="flex flex-col z-50 h-auto static place-items-center">
       <!-- Logo and close -->
@@ -35,18 +30,23 @@
 
 <script setup lang="ts">
 const closeDrawer = () => {
-  console.log('closing drawer!')
   drawerOpen().value = false
 }
+
+onMounted(() => {
+  console.log(process.client)
+  drawerOpen().value = window.innerWidth >= 1024
+})
 </script>
 
 <style scoped>
 .sidebar {
   min-width: 256px;
+  transition: margin-left 150ms ease-in-out 0s;
 }
 
 .sticky-sidebar {
-  @apply lg:!sticky lg:!left-0 lg:!top-0;
+  @apply lg:!sticky lg:!top-0;
 }
 
 .fixed-sidebar {
